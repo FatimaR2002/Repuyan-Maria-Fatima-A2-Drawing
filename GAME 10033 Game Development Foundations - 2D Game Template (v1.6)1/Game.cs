@@ -27,7 +27,10 @@ namespace MohawkGame2D
         public void Update()
         {
             //Make the background a light blue colour
-            Window.ClearBackground(240, 255, 255);
+            Window.ClearBackground(135, 206, 235);
+
+            
+       
 
         }
     }
