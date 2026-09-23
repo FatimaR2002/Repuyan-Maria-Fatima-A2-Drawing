@@ -35,11 +35,12 @@ namespace MohawkGame2D
             Draw.SetFillColor(218, 160, 109);
             Draw.Rectangle(180, 220, 20, 200);
 
-            //Draw a square at the top of rectangle and make it orange
+            //Draw a circle at the top of the rectangle and make the colour orange
             Draw.SetLineColor(255, 117, 24);
             Draw.SetLineSize(1);
             Draw.SetFillColor(255, 165, 0);
-            Draw.Rectangle(180, 180, 40, 40);
+            Draw.Circle(200, 200, 20);
+
 
             //Draw the 4 pinwheel triangles and make them follow the mouse cursor position, from the center of the square
             //The First Pinwheel triangle is coloured green
