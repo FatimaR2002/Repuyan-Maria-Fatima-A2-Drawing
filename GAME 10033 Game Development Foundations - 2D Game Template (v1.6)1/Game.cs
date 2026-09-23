@@ -33,6 +33,15 @@ namespace MohawkGame2D
             Draw.SetLineSize(0);
             Draw.SetFillColor(218, 160, 109);
             Draw.Rectangle(180, 200, 20, 200);
+
+            //Draw a circle at the top of rectangle and make it orange
+            Draw.SetFillColor(248, 131, 121);
+            Draw.Circle(190, 190, 50);
+
+            //Draw a tiny circle at the center of the big circle and make it black
+            Draw.SetFillColor(0, 0, 0);
+            Draw.Circle(190, 190, 8);
+
         }
     }
 
