@@ -29,9 +29,10 @@ namespace MohawkGame2D
             //Make the background a light blue colour
             Window.ClearBackground(135, 206, 235);
 
-            
-       
-
+            //Draw a rectangle at upper left corner position and make the colour a light brown colour
+            Draw.SetLineSize(0);
+            Draw.SetFillColor(218, 160, 109);
+            Draw.Rectangle(180, 200, 20, 200);
         }
     }
 
