@@ -35,8 +35,6 @@ namespace MohawkGame2D
             Draw.SetFillColor(138, 154, 91);
             Draw.Capsule(200, 200,80,400, 6);
 
-            //Drawing the flower pot
-
             //Drawing first layer of petals
             //First petal
             Draw.SetLineColor(0, 0, 0);
@@ -44,15 +42,15 @@ namespace MohawkGame2D
             Draw.SetFillColor(255, 255, 240);
             Draw.Capsule(200, 200, 200, 360, 10);
             //Second petal
-            //Draw.SetLineColor(0, 0, 0);
-            //Draw.SetLineSize(1);
-            //Draw.SetFillColor(255, 255, 240);
-            //Draw.Capsule(200, 200, 280, 360, 10);
+            Draw.SetLineColor(0, 0, 0);
+            Draw.SetLineSize(1);
+            Draw.SetFillColor(255, 255, 240);
+            Draw.Capsule(200, 200, 280, 360, 10);
             ////Third petal
-            //Draw.SetLineColor(0, 0, 0);
-            //Draw.SetLineSize(1);
-            //Draw.SetFillColor(255, 255, 240);
-            //Draw.Capsule(200, 200, 270, 360, 10);
+            Draw.SetLineColor(0, 0, 0);
+            Draw.SetLineSize(1);
+            Draw.SetFillColor(255, 255, 240);
+            Draw.Capsule(200, 200, 270, 360, 10);
 
 
             //Draw a circle at the top of the rectangle and make the colour orange
