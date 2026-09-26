@@ -17,7 +17,7 @@ namespace MohawkGame2D
         public void Setup()
         {
             //Set the window title
-            Window.SetTitle("PinWheel Spinner");
+            Window.SetTitle("Colourful Daisy");
             //Set the window size to 400x400 pixels
             Window.SetSize(400, 400);
         }
