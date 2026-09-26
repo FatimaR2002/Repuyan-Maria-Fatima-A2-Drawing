@@ -1,6 +1,7 @@
 ﻿// Include the namespaces (code libraries) you need below.
 using System;
 using System.Numerics;
+using System.Text.RegularExpressions;
 
 // The namespace your code is in.
 namespace MohawkGame2D
@@ -29,35 +30,97 @@ namespace MohawkGame2D
             //Make the background a light blue colour
             Window.ClearBackground(135, 206, 235);
 
+            //Draw Ellipses for the leaves on the stem
+            Draw.SetLineColor(0, 0, 0);
+            Draw.SetLineSize(1);
+            Draw.SetFillColor(138, 154, 91);
+            Draw.Ellipse(100, 330, 20, 60);
+
+            Draw.SetLineColor(0, 0, 0);
+            Draw.SetLineSize(1);
+            Draw.SetFillColor(138, 154, 91);
+            Draw.Ellipse(130, 360, 60, 20);
+
             //Draw a capsule for the stem and make the colour green
             Draw.SetLineColor(0,0,0);
             Draw.SetLineSize(1);
             Draw.SetFillColor(138, 154, 91);
             Draw.Capsule(200, 200,80,400, 6);
 
-            //Drawing first layer of petals
-            //First petal
+            ////////////////////////////////////////////////////////////
+            
+            //Draw Capsules for the petals
+            //First Petal
             Draw.SetLineColor(0, 0, 0);
             Draw.SetLineSize(1);
             Draw.SetFillColor(255, 255, 240);
-            Draw.Capsule(200, 200, 200, 360, 10);
-            //Second petal
-            Draw.SetLineColor(0, 0, 0);
-            Draw.SetLineSize(1);
-            Draw.SetFillColor(255, 255, 240);
-            Draw.Capsule(200, 200, 280, 360, 10);
-            ////Third petal
-            Draw.SetLineColor(0, 0, 0);
-            Draw.SetLineSize(1);
-            Draw.SetFillColor(255, 255, 240);
-            Draw.Capsule(200, 200, 270, 360, 10);
+            Draw.Capsule(200, 200, 160, 100, 30);
 
+            //Second Petal
+            Draw.SetLineColor(0, 0, 0);
+            Draw.SetLineSize(1);
+            Draw.SetFillColor(255, 255, 240);
+            Draw.Capsule(200, 200, 240, 100, 30);
 
-            //Draw a circle at the top of the rectangle and make the colour orange
+            //Third petal
+            Draw.SetLineColor(0, 0, 0);
+            Draw.SetLineSize(1);
+            Draw.SetFillColor(255, 255, 240);
+            Draw.Capsule(200, 200, 100, 160, 30);
+
+            //Fourth petal
+            Draw.SetLineColor(0, 0, 0);
+            Draw.SetLineSize(1);
+            Draw.SetFillColor(255, 255, 240);
+            Draw.Capsule(200, 200, 100, 240, 30);
+
+            //Fifth petal
+            Draw.SetLineColor(0, 0, 0);
+            Draw.SetLineSize(1);
+            Draw.SetFillColor(255, 255, 240);
+            Draw.Capsule(200, 200, 160, 300, 30);
+
+            //Sixth petal
+            Draw.SetLineColor(0, 0, 0);
+            Draw.SetLineSize(1);
+            Draw.SetFillColor(255, 255, 240);
+            Draw.Capsule(200, 200, 240, 300, 30);
+
+            //Seventh petal
+            Draw.SetLineColor(0, 0, 0);
+            Draw.SetLineSize(1);
+            Draw.SetFillColor(255, 255, 240);
+            Draw.Capsule(200, 200, 300, 260, 30);
+
+            //Eighth petal
+            Draw.SetLineColor(0, 0, 0);
+            Draw.SetLineSize(1);
+            Draw.SetFillColor(255, 255, 240);
+            Draw.Capsule(200, 200, 300, 160, 30);
+
+            ////////////////////////////////////////////////////////////////
+            //Draw a Circle to remove lines from the capsules
+            //to make the petals more uniformed//
+            Draw.SetLineColor(0, 0, 0);
+            Draw.SetLineSize(0);
+            Draw.SetFillColor(255, 255, 240);
+            Draw.Circle(200, 200, 70);
+
+            /////////////////////////////////////////////////////////////////
+            
+            //Draw a circle at the top of the rectangle and make the colour yellow
             Draw.SetLineColor(255, 117, 24);
             Draw.SetLineSize(1);
             Draw.SetFillColor(254, 216, 94);
-            Draw.Circle(200, 200, 30);
+            Draw.Circle(200, 200, 40);
+
+            ////////////////////////////////////////////////////////////////
+            
+            //Draw arc at XY position 
+            Draw.SetLineColor(255, 172, 28);
+            Draw.SetLineSize(1);
+            Draw.SetFillColor(255, 191, 0);
+            Draw.Arc(400, 0, 320, 0, 400, 60);
         }
     }
 
