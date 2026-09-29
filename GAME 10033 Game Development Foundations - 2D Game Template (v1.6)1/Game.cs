@@ -113,19 +113,12 @@ namespace MohawkGame2D
             /////////////////////////////////////////////////////////////////
             
             //Draw a circle at the top of the rectangle and make the colour yellow
-            Draw.SetLineColor(255, 117, 24);
+            Draw.SetLineColor(0,0,0);
             Draw.SetLineSize(1);
             Draw.SetFillColor(254, 216, 94);
             Draw.Circle(200, 200, 40);
 
             ////////////////////////////////////////////////////////////////
-            
-            //Draw arc at XY position 
-            Draw.SetLineColor(255, 172, 28);
-            Draw.SetLineSize(1);
-            Draw.SetFillColor(255, 191, 0);
-            Draw.Arc(400, 0, 320, 0, 400, 60);
-
             //Adding a key spacebar input to change the petal colours from white to an assorted colour of petals 
             if (Input.IsKeyboardKeyDown(KeyboardKey.Space) == true)
             {
@@ -144,7 +137,7 @@ namespace MohawkGame2D
                 //Third petal
                 Draw.SetLineColor(0, 0, 0);
                 Draw.SetLineSize(1);
-                Draw.SetFillColor(255, 255, 240);
+                Draw.SetFillColor(204, 204, 255);
                 Draw.Capsule(200, 200, 100, 160, 30);
 
                 //Fourth petal
@@ -185,6 +178,11 @@ namespace MohawkGame2D
                 Draw.SetFillColor(204, 204, 255);
                 Draw.Circle(200, 200, 70);
 
+                //Draw a circle at the top of the rectangle and make the colour yellow
+                Draw.SetLineColor(0,0,0);
+                Draw.SetLineSize(1);
+                Draw.SetFillColor(207, 159, 255);
+                Draw.Circle(200, 200, 40);
 
 
             }
