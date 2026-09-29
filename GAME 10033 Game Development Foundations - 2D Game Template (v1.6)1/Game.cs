@@ -18,8 +18,12 @@ namespace MohawkGame2D
         {
             //Set the window title
             Window.SetTitle("Colourful Daisy");
+
+
+
             //Set the window size to 400x400 pixels
             Window.SetSize(400, 400);
+
         }
 
         /// <summary>
@@ -121,6 +125,69 @@ namespace MohawkGame2D
             Draw.SetLineSize(1);
             Draw.SetFillColor(255, 191, 0);
             Draw.Arc(400, 0, 320, 0, 400, 60);
+
+            //Adding a key spacebar input to change the petal colours from white to an assorted colour of petals 
+            if (Input.IsKeyboardKeyDown(KeyboardKey.Space) == true)
+            {
+                //First Petal
+                Draw.SetLineColor(0, 0, 0);
+                Draw.SetLineSize(1);
+                Draw.SetFillColor(204, 204, 255);
+                Draw.Capsule(200, 200, 160, 100, 30);
+
+                //Second Petal
+                Draw.SetLineColor(0, 0, 0);
+                Draw.SetLineSize(1);
+                Draw.SetFillColor(204, 204, 255);
+                Draw.Capsule(200, 200, 240, 100, 30);
+
+                //Third petal
+                Draw.SetLineColor(0, 0, 0);
+                Draw.SetLineSize(1);
+                Draw.SetFillColor(255, 255, 240);
+                Draw.Capsule(200, 200, 100, 160, 30);
+
+                //Fourth petal
+                Draw.SetLineColor(0, 0, 0);
+                Draw.SetLineSize(1);
+                Draw.SetFillColor(204, 204, 255);
+                Draw.Capsule(200, 200, 100, 240, 30);
+
+                //Fifth petal
+                Draw.SetLineColor(0, 0, 0);
+                Draw.SetLineSize(1);
+                Draw.SetFillColor(204, 204, 255);
+                Draw.Capsule(200, 200, 160, 300, 30);
+
+                //Sixth petal
+                Draw.SetLineColor(0, 0, 0);
+                Draw.SetLineSize(1);
+                Draw.SetFillColor(204, 204, 255);
+                Draw.Capsule(200, 200, 240, 300, 30);
+
+                //Seventh petal
+                Draw.SetLineColor(0, 0, 0);
+                Draw.SetLineSize(1);
+                Draw.SetFillColor(204, 204, 255);
+                Draw.Capsule(200, 200, 300, 260, 30);
+
+                //Eighth petal
+                Draw.SetLineColor(0, 0, 0);
+                Draw.SetLineSize(1);
+                Draw.SetFillColor(204, 204, 255);
+                Draw.Capsule(200, 200, 300, 160, 30);
+
+                ////////////////////////////////////////////////////////////////
+                //Draw a Circle to remove lines from the capsules
+                //to make the petals more uniformed//
+                Draw.SetLineColor(0, 0, 0);
+                Draw.SetLineSize(0);
+                Draw.SetFillColor(204, 204, 255);
+                Draw.Circle(200, 200, 70);
+
+
+
+            }
         }
     }
 
