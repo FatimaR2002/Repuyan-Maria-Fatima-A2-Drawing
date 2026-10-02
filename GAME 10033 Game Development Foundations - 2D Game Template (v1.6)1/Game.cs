@@ -96,6 +96,7 @@ namespace MohawkGame2D
             Draw.SetLineSize(0);
             Draw.SetFillColor(255, 255, 240);
             Draw.Circle(200, 200, 70);
+
             //Draw a circle in the middle of the flower and make the colour yellow
             Draw.SetLineColor(0,0,0);
             Draw.SetLineSize(1);
@@ -103,8 +104,8 @@ namespace MohawkGame2D
             Draw.Circle(200, 200, 40);
 
             ////////////////////////////////////////////////////////////////
-            
-            //Draw a circle at the upper right corner of the window and make the colour yellow
+
+            //Draw a circle at the upper right corner of the window to represent the sun
             //Circle for the sun and make the colour yellow
             Draw.SetLineColor(0, 0, 0);
             Draw.SetLineSize(1);
